@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 :root {
   font-size: 62.5%;
 
-  --color-base-purple: #B52184;
-  --linear-gradient-blue: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  --color-base-purple: #b52184;
+  --linear-gradient-blue: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
 }
 
 body {
   min-width: 320px;
 }
 
-body header, .topics, #my-form {
+body header,
+.topics,
+#my-form {
   padding-inline: 3rem;
 }
 
@@ -24,7 +26,8 @@ body img {
   max-width: 100%;
 }
 
-body h1, #my-form legend {
+body h1,
+#my-form legend {
   font-size: 3.2rem;
   font-weight: 900;
   color: var(--color-base-purple);
@@ -68,7 +71,7 @@ header a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5rem; 
+  gap: 5rem;
 }
 
 .topics {
@@ -144,7 +147,8 @@ header a:hover {
   overflow: hidden;
 }
 
-.input-wrapper input, .input-wrapper textarea {
+.input-wrapper input,
+.input-wrapper textarea {
   height: 5rem;
   padding: 1.2rem 1.6rem 1.2rem 5rem;
   border: 1.5px solid var(--color-base-purple);
@@ -155,7 +159,8 @@ header a:hover {
   border: 1px solid red;
 }
 
-.input-wrapper input::placeholder, .input-wrapper textarea::placeholder {
+.input-wrapper input::placeholder,
+.input-wrapper textarea::placeholder {
   font-size: 1.6rem;
   line-height: 140%;
 }
@@ -186,65 +191,6 @@ footer {
   font-weight: 600;
   color: white;
   background: var(--linear-gradient-blue);
-}
-
-@media(min-width: 720px) {
-  body h1, #my-form legend {
-    font-size: 5.8rem;
-  }
-
-  header {
-    margin: 0 3rem 10rem 10rem;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: start;
-    gap: 0 3rem;
-  }
-
-  header img {
-    max-height: 100%;
-    grid-column: 2/3;
-    grid-row: 1/4;
-  }
-
-  .title-text {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  header p {
-    margin: 0;
-    font-size: 3.2rem;
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  header a {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .topics-wrapper {
-    height: 40rem;
-    flex-direction: row;
-    justify-content: center;
-    gap: 6rem;
-  }
-
-  .topics {
-    height: 100%;
-  }
-
-  .form-img-wrapper {
-    justify-content: space-between;
-    gap: 9rem;
-  }
-  
-  .form-img-wrapper > img {
-    position: inherit;
-    opacity: 1;
-  }
 }
 
 /*animations*/
