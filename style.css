@@ -216,3 +216,23 @@ header a {
     transform: translateY(0%);
   }
 }
+
+@media (min-width: 720px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title-text {
+    order: 1;
+  }
+  .imgastro {
+    order: 2;
+  }
+
+  .topics-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+  }
+}
